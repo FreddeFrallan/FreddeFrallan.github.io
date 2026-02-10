@@ -12,6 +12,7 @@
             document.getElementById(elementId).innerHTML = content;
         }
         window.onload = () => {
+            loadSection('experience_education.html', 'experience-container');
             loadSection('selected_pubs.html', 'selected-container');
             loadSection('all_pubs.html', 'all-container');
         };
@@ -52,30 +53,7 @@
         </a>
     </div>
 
-    <section class="info-box">
-        <h2>Experience &amp; Education</h2>
-        <ul class="pub-list">
-            <li class="pub-item">
-                <span class="pub-title">Technical Lead for LLM Training project (Jan 2024 – Ongoing)</span>
-                <span class="pub-meta">As a RISE research scientist, I am the tech-lead for a 20-person team training Ericsson's internal code internal code LLMs. This project is in collaboration with Mistral, where we train 100B+ parameter models for code generation and understanding.</span>
-            </li>
-
-            <li class="pub-item">
-                <span class="pub-title">PhD in Computational Linguistics (Jan 2025 – Sep 2026)</span>
-                <span class="pub-meta">Enrolled in a fast-track PhD program at <strong>Uppsala University</strong>. My focus is on training algorithms for large language models and neural networks, with a scheduled defense in 2026.</span>
-            </li>
-            <li class="pub-item">
-                <span class="pub-title">Research Scientist (Jan 2018 – Ongoing)</span>
-                <span class="pub-meta">My current work place, and sponsor of my PhD studies, is the <strong>Research Institutes of Sweden</strong> in Stockholm. Here, I focus on fundamental research and publishing at high-tier venues, often in collaboration with the good folks at Google DeepMind.</span>
-            </li>
-
-            <li class="pub-item">
-                <span class="pub-title">BsC in Computer Science & MsC in Robotics (Aug 2018 – Jun 2024)</span>
-                <span class="pub-meta">Studied computer science and machine learning at the <strong>KTH Royal Institute of Technology</strong> in Stockholm. Some years later I also
-                completed a fast-track one-year master's in Robotics and Automation at <strong>University West</strong>.</span>
-            </li>
-        </ul>
-    </section>
+    <div id="experience-container"></div>
 
     <div id="selected-container" class="highlight-box"></div>
 
